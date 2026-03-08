@@ -1,2 +1,2 @@
-# demographic-data-analyzer
+# Demographic-data-analyzer
 freeCodeCamp Data Analysis with Python project
