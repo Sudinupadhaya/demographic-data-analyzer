@@ -36,7 +36,8 @@ The program answers the following questions:
 Run the following command in the terminal:
 
 ```bash
-python main.py```
+python main.py
+```
 
 
 ##  Example Output
