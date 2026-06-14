@@ -1,69 +1,119 @@
-
 # Demographic Data Analyzer
 
-This project is part of the **freeCodeCamp Data Analysis with Python** certification.
+A Python data analysis project that uses Pandas to analyze demographic information from the 1994 Census dataset. This project is part of the freeCodeCamp Data Analysis with Python certification and demonstrates practical data manipulation, aggregation, filtering, and summary-statistics skills.
 
-## Project Description
+## Project Objective
 
-This project analyzes demographic data using **Pandas**. The dataset was extracted from the 1994 Census database.
+The objective of this project is to extract meaningful demographic insights from census data using Python and Pandas. The analysis focuses on race distribution, education level, income, working hours, country-level income patterns, and occupation trends.
 
-The program answers the following questions:
+## Dataset
 
-- How many people of each race are represented in the dataset
-- What is the average age of men
-- What is the percentage of people who have a Bachelor's degree
-- What percentage of people with advanced education make more than 50K
-- What percentage of people without advanced education make more than 50K
-- What is the minimum number of hours a person works per week
-- What percentage of the people who work the minimum number of hours per week have a salary of more than 50K
-- Which country has the highest percentage of people that earn more than 50K
-- What is the most popular occupation for those who earn more than 50K in India
+- Dataset: 1994 Census / Adult Income dataset
+- File: `adult.data.csv`
+- Main target column: income category (`<=50K` or `>50K`)
+- Key feature categories:
+  - Age
+  - Race
+  - Education
+  - Occupation
+  - Native country
+  - Working hours per week
+  - Salary group
 
-## Technologies Used
+## Questions Answered
+
+The analysis answers the following questions:
+
+- How many people of each race are represented in the dataset?
+- What is the average age of men?
+- What percentage of people have a Bachelor's degree?
+- What percentage of people with advanced education earn more than 50K?
+- What percentage of people without advanced education earn more than 50K?
+- What is the minimum number of hours worked per week?
+- What percentage of people who work minimum hours earn more than 50K?
+- Which country has the highest percentage of people earning more than 50K?
+- What is the most popular occupation for people earning more than 50K in India?
+
+## Tech Stack
 
 - Python
 - Pandas
+- Unit testing
 
-## Files
+## Project Structure
 
-- `demographic_data_analyzer.py` — main project file
-- `main.py` — used for local testing
-- `test_module.py` — unit tests for the project
-- `adult.data.csv` — dataset file
+```text
+demographic-data-analyzer/
+│
+├── adult.data.csv                  # Dataset
+├── demographic_data_analyzer.py    # Main analysis logic
+├── main.py                         # Script for running the analysis
+├── test_module.py                  # Unit tests
+└── README.md                       # Project documentation
+```
 
 ## How to Run
 
-Run the following command in the terminal:
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Sudinupadhaya/demographic-data-analyzer.git
+cd demographic-data-analyzer
+```
+
+### 2. Install dependencies
+
+```bash
+pip install pandas
+```
+
+### 3. Run the project
 
 ```bash
 python main.py
 ```
 
+### 4. Run tests
 
-##  Example Output
+```bash
+python -m unittest test_module.py
+```
 
-The function returns a dictionary containing:
+## Output
 
-race_count
+The analysis returns a dictionary containing:
 
-average_age_men
+- `race_count`
+- `average_age_men`
+- `percentage_bachelors`
+- `higher_education_rich`
+- `lower_education_rich`
+- `min_work_hours`
+- `rich_percentage`
+- `highest_earning_country`
+- `highest_earning_country_percentage`
+- `top_IN_occupation`
 
-percentage_bachelors
+## Skills Demonstrated
 
-higher_education_rich
+This project demonstrates:
 
-lower_education_rich
+- Data loading with Pandas
+- Data filtering
+- Grouping and aggregation
+- Percentage calculation
+- Conditional analysis
+- Working with categorical data
+- Writing clean analysis functions
+- Validating results using tests
 
-min_work_hours
+## Why This Project Matters
 
-rich_percentage
+This project shows the ability to work with real tabular data and answer business-style analytical questions using Python. These are core skills for data analyst, business analyst, and junior data science roles.
 
-highest_earning_country
+## Author
 
-highest_earning_country_percentage
+**Sudin Upadhaya**
 
-top_IN_occupation
-
-
-### Author
-Sudin Upadhaya
+- GitHub: Sudinupadhaya
+- Focus areas: Data Analysis, Python, Machine Learning, and Software Engineering
